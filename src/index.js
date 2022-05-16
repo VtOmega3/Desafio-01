@@ -115,7 +115,7 @@ app.delete('/todos/:id', (request, response) => {
 
   user.todos.splice(todoIndex, 1)
 
-  return res.status(204).send();
+  return response.status(204).send();
 });
 
 module.exports = app;
